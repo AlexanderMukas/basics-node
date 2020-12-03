@@ -1,14 +1,16 @@
 //ES6
 
-// arrow functions
+// arrow functions - new syntax
 var nums = [1,2,3,4];
-nums.forEach( num => {
+nums.forEach( (num, index) => {
     console.log(num*2);
+    console.log("index: ", index);
 })
 
-nums.forEach( function(num) {
-    console.log(num*2)
-})
+// old syntax
+// nums.forEach( function(num) {
+//     console.log(num*2)
+// })
 
 // ===
 
