@@ -50,3 +50,36 @@ var d = 'd';
 // var e = {c: c, d: d};
 var e = { c, d };
 console.log(e);
+
+// computed object keys
+var name = 'something';
+
+var object = {
+    [name] : 'cool'
+};
+
+console.log(object.something);
+
+// arrays destructuring
+
+var nums = [1,2,3];
+var [one, two, three] = nums;
+console.log(one, two, three);
+// swap-a-roo
+var [one, two] = [two, one];
+console.log(`one: ${one}, two: ${two}!`);
+
+// classes, getters
+
+class Thing {
+    constructor(_id) {
+        this._id = _id;
+    }
+    //getter
+    get id() {
+        return this._id;
+    }
+}
+
+let obj = new Thing(42);
+console.log( obj.id );
