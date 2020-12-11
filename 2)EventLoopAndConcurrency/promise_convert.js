@@ -1,9 +1,9 @@
 const fs = require('fs');
 
 // old
-fs.readFile('text.txt', (err, data) => {
-    console.log( data.toString() );
-});
+// fs.readFile('text.txt', (err, data) => {
+//     console.log( data.toString() );
+// });
 
 // new
 
