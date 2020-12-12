@@ -17,8 +17,8 @@ new Promise( (resolve, reject) => {
     });
 })
 .then( data => {
-    console.log( data.toString() );
+    console.log( `data.toString() -> ${data.toString()}` );
 })
 .catch(err => {
-    console.log(err);
+    console.log(`err -> ${err}`);
 });
