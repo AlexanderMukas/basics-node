@@ -1,15 +1,15 @@
 function a() {
-    return Promise.resolve('a')
-}
+    return Promise.resolve('a');
+};
 
-async function b() {
-    return Promise.resolve('b')
-}
+const result = async () => {
+    return await Promise.resolve('b');
+};
 
 async function c() {
-    return 'c'
-}
+    return 'c';
+};
 
-console.log( a() );
-console.log( b() );
-console.log( c() );
+console.log(a());
+console.log(result());
+console.log(c());
