@@ -10,7 +10,7 @@ var run = async () => {
         });
 
     // async/await version
-    const data = await read('text.txt')
+    const data = await read('text.txt');
     console.log( data.toString() );
 };
 
