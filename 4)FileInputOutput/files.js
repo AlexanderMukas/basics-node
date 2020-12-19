@@ -18,7 +18,7 @@ fs.readFile('file.txt', read_options, (err, data) => {
 
 const run = async () => {
     try {  
-        const data = await read('file.txt');
+        const data = await read('file.txt', read_options);
         console.log( data.toString() );
 
     } catch (err) {
