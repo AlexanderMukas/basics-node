@@ -12,6 +12,7 @@ let read_options = {
 // read 
 
 fs.readFile('file.txt', read_options, (err, data) => {
+    if(err) console.log(err);
     console.log( data.toString() );
 });
 
@@ -56,3 +57,10 @@ const runWrite = async () => {
     }
 }
 runWrite();
+
+// detete ----------------------------------------------------
+fs.unlink('file.txt', err => {
+    if(err) {
+        console.log(err);
+    }
+});
