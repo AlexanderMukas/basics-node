@@ -14,7 +14,7 @@ let read_options = {
 fs.readFile('file.txt', read_options, (err, data) => {
     if(err) console.log(err);
     console.log( data.toString() );
-});
+});    
 
 // read (async/await)------------------------------
 
