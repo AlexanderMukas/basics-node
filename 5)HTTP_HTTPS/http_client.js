@@ -1,11 +1,13 @@
 const http = require('http');
+const PORT = 9090;
+const HOST = '127.0.0.1';
 
 const message = 'hello :)';
 
 const options = {
     method: 'GET',
-    host: '127.0.0.1',
-    port: 9090,
+    host: HOST,
+    port: PORT,
     path: '/',
     headers: {
         'content-type': 'text/plain',
