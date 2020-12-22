@@ -26,9 +26,12 @@ const req = http.request( options, res => {
     // do something after all the data comes in
     res.on('end', () => {
         console.log(content);
-    });
-    
-})
+    }); 
+});
+
+// send the request
+req.write(message);
+req.end();
 
 // curl http://127.0.0.1:9090 \
 // > --data 'hello :)'
