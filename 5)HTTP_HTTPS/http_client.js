@@ -33,5 +33,7 @@ const req = http.request( options, res => {
 req.write(message);
 req.end();
 
+// node http_client.js
+
 // curl http://127.0.0.1:9090 \
 // > --data 'hello :)'
