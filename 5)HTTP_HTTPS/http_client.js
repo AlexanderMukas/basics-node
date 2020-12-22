@@ -29,3 +29,6 @@ const req = http.request( options, res => {
     });
     
 })
+
+// curl http://127.0.0.1:9090 \
+// > --data 'hello :)'
